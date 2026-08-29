@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFVN Rankings — Free Fire Việt Nam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <div class="brand"><span class="brand-mark">FF</span><div><strong>FFVN RANKINGS</strong><small>FREE FIRE VIỆT NAM</small></div></div>
+    <nav><a href="#ranking">Xếp hạng</a><a href="#submit">Gửi team</a><a href="admin.html" class="admin-link">Admin</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">BẢNG XẾP HẠNG TEAM BÁN CHUYÊN</span>
+      <h1>Ai đang là <em>team số 1</em> Free Fire Việt Nam?</h1>
+      <p>BXH Top 100 do cộng đồng đề xuất và admin FFVN kiểm duyệt. Điểm số được cập nhật minh bạch theo từng team.</p>
+      <a class="btn primary" href="#ranking">Xem Top 100 ↓</a>
+      <a class="btn ghost" href="#submit">Đề xuất team</a>
+    </div>
+    <div class="podium">
+      <div class="podium-card second"><span>02</span><b id="top2">BRAVO</b><strong id="score2">920</strong><small>POINTS</small></div>
+      <div class="podium-card first"><span>01</span><b id="top1">ALPHA</b><strong id="score1">985</strong><small>POINTS</small></div>
+      <div class="podium-card third"><span>03</span><b id="top3">CHARLIE</b><strong id="score3">875</strong><small>POINTS</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="ranking" class="section wrap">
+  <div class="section-head"><div><span class="eyebrow">LEADERBOARD</span><h2>Top 100 Team</h2></div><input id="search" placeholder="🔎  Tìm tên team..."></div>
+  <div class="table-wrap"><table><thead><tr><th>HẠNG</th><th>TEAM</th><th>ĐIỂM</th><th>CẬP NHẬT</th></tr></thead><tbody id="rankingBody"></tbody></table></div>
+</section>
+
+<section id="submit" class="submit-section">
+  <div class="wrap form-grid">
+    <div><span class="eyebrow">COMMUNITY SUBMISSION</span><h2>Gửi team vào BXH</h2><p>Gửi thông tin và bằng chứng. Team chỉ được công khai sau khi admin duyệt.</p></div>
+    <form id="submitForm">
+      <label>Tên team<input required name="team" placeholder="VD: FFVN Warriors"></label>
+      <label>Logo URL <input name="logo" placeholder="https://..."></label>
+      <label>Điểm đề xuất<input required type="number" min="0" max="9999" name="score" placeholder="VD: 750"></label>
+      <label>Người gửi<input required name="sender" placeholder="Tên của bạn"></label>
+      <label>Link bằng chứng<input name="proof" placeholder="Facebook / Google Drive / giải đấu..."></label>
+      <label>Ghi chú<textarea name="note" placeholder="Thành tích, giải đấu, lý do đề xuất..."></textarea></label>
+      <button class="btn primary full" type="submit">Gửi yêu cầu duyệt</button>
+      <p id="submitMsg" class="msg"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">FFVN Rankings · Phiên bản demo · Dữ liệu demo lưu trên trình duyệt.</div></footer>
+<script src="app.js"></script>
+</body>
+</html>
